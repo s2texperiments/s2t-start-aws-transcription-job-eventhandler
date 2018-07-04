@@ -30,7 +30,7 @@
           },
           "transcribe-provider": {
             "Type": "String",
-            "Value": "gcp"
+            "Value": "aws"
           }
         },
         "Type": "Notification",
