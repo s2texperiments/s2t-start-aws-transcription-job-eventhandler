@@ -14,7 +14,7 @@
         "MessageAttributes": {
           "key": {
             "Type": "String",
-            "Value": "aws/transcoded-audio/some_api_key_id/pid.ogg"
+            "Value": "aws/transcoded-audio/some_api_key_id/pid.flac"
           },
           "pid": {
             "Type": "String",

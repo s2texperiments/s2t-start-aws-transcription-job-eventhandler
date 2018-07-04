@@ -1,3 +1,5 @@
+let transcribeServiceApi = require('./transcribeServiceApi.js');
+const AWS_REGION = process.env['AWS_REGION'];
 
 exports.handler = async (event) => {
 
@@ -28,5 +30,17 @@ exports.handler = async (event) => {
         throw `missing mandatory attributes: bucket: ${bucket} key: ${key} pid: ${pid}`
     }
 
+    let result = await transcribeServiceApi.startTranscriptionJob(
+        {
+            LanguageCode: 'en-US',
+            Media: {
+                MediaFileUri: `https://s3-${AWS_REGION}.amazonaws.com/${bucket}/${key}`
+            },
+            MediaFormat: 'flac',
+            TranscriptionJobName: `${apiKeyId}:${pid}`,
+            MediaSampleRateHertz: 48000
+        }
+    );
+    console.log(result);
     console.log("start job!");
 };
