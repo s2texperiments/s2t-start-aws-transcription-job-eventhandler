@@ -5,5 +5,5 @@
   },
   "MediaFormat": "flac",
   "TranscriptionJobName": "some_api_key_id_-_pid",
-  "MediaSampleRateHertz": 48000
+  "MediaSampleRateHertz": 44100
 }
