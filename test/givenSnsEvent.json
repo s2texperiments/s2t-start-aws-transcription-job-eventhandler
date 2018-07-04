@@ -1,0 +1,43 @@
+{
+  "Records": [
+    {
+      "EventVersion": "1.0",
+      "EventSubscriptionArn": "arn:aws:sns:EXAMPLE",
+      "EventSource": "aws:sns",
+      "Sns": {
+        "SignatureVersion": "1",
+        "Timestamp": "1970-01-01T00:00:00.000Z",
+        "Signature": "EXAMPLE",
+        "SigningCertUrl": "EXAMPLE",
+        "MessageId": "95df01b4-ee98-5cb9-9903-4c221d41eb5e",
+        "Message": "placeholder",
+        "MessageAttributes": {
+          "key": {
+            "Type": "String",
+            "Value": "aws/transcoded-audio/some_api_key_id/pid.ogg"
+          },
+          "pid": {
+            "Type": "String",
+            "Value": "pid"
+          },
+          "api-key-id": {
+            "Type": "String",
+            "Value": "some_api_key_id"
+          },
+          "bucket": {
+            "Type": "String",
+            "Value": "s2t-base-s2tbucket-lm0q85yjlres"
+          },
+          "transcribe-provider": {
+            "Type": "String",
+            "Value": "gcp"
+          }
+        },
+        "Type": "Notification",
+        "UnsubscribeUrl": "EXAMPLE",
+        "TopicArn": "arn:aws:sns:EXAMPLE",
+        "Subject": "TestInvoke"
+      }
+    }
+  ]
+}
