@@ -38,7 +38,7 @@ exports.handler = async (event) => {
             },
             MediaFormat: 'flac',
             TranscriptionJobName: `${apiKeyId}_-_${pid}`,
-            MediaSampleRateHertz: 48000
+            MediaSampleRateHertz: 44100
         }
     );
     console.log(result);
