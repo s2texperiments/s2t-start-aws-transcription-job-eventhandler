@@ -37,7 +37,7 @@ exports.handler = async (event) => {
                 MediaFileUri: `https://s3-${AWS_REGION}.amazonaws.com/${bucket}/${key}`
             },
             MediaFormat: 'flac',
-            TranscriptionJobName: `${apiKeyId}:${pid}`,
+            TranscriptionJobName: `${apiKeyId}_-_${pid}`,
             MediaSampleRateHertz: 48000
         }
     );

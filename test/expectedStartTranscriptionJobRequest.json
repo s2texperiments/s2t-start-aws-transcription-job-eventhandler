@@ -4,6 +4,6 @@
     "MediaFileUri": "https://s3-eu-west-1.amazonaws.com/s2t-base-s2tbucket-lm0q85yjlres/aws/transcoded-audio/some_api_key_id/pid.flac"
   },
   "MediaFormat": "flac",
-  "TranscriptionJobName": "some_api_key_id:pid",
+  "TranscriptionJobName": "some_api_key_id_-_pid",
   "MediaSampleRateHertz": 48000
 }
