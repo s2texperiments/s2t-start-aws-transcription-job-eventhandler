@@ -25,7 +25,7 @@ describe('eventhandler', () => {
         });
     });
 
-    it('valid sns event should trigger a transcribe job', async () => {
+    it('valid sns event should trigger a transcription job', async () => {
         await underTest.handler(givenSnsEvent);
     });
 });
