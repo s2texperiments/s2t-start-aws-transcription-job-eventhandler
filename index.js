@@ -20,6 +20,9 @@ exports.handler = async (event) => {
                     },
                     "pid": {
                         Value: pid
+                    },
+                    "sample-rate":{
+                        Value: sampleRate
                     }
                 }
             }
@@ -38,7 +41,7 @@ exports.handler = async (event) => {
             },
             MediaFormat: 'flac',
             TranscriptionJobName: `${apiKeyId}_-_${pid}`,
-            MediaSampleRateHertz: 44100
+            MediaSampleRateHertz: parseInt(sampleRate)
         }
     );
     console.log(result);

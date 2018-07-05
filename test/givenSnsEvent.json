@@ -31,6 +31,10 @@
           "transcribe-provider": {
             "Type": "String",
             "Value": "aws"
+          },
+          "sample-rate": {
+            "Type": "String",
+            "Value": "44100"
           }
         },
         "Type": "Notification",
